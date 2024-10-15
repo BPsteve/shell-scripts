@@ -1,0 +1,9 @@
+#!/bin/bash
+# While Loop
+arg=no
+while [ $arg != "yes" ]
+do
+  echo "are you ready to continue? yes/no"
+  read arg
+done
+echo "Continuing with the rest of the script"
