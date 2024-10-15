@@ -1,0 +1,10 @@
+# Define your function
+echo_message(){
+  name=empty
+  echo "Please Enter a Name: "
+  read name
+  echo "The Name You Entered is $name"
+}
+
+# Invoke your function
+echo_message
