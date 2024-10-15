@@ -1,0 +1,6 @@
+#!/bin/bash
+echo "Enter the full path of the file"
+read file
+echo "Enter the pattern you are looking for"
+read pattern
+grep $pattern $file
