@@ -1,0 +1,14 @@
+#!/bin/bash
+# Testing Case statement
+val=1
+case $val in
+  1)
+    echo "One"
+    ;;
+  2)
+    echo "Two"
+    ;;
+	*)
+		echo "Undefined Value! "
+		;;
+esac
