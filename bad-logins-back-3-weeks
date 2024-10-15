@@ -1,0 +1,13 @@
+#!/bin/bash
+log_file="/var/log/auth.log"
+
+today=$(date '=%b %_d')
+
+# get 3 weeks ago date
+start_date=$(date --date="3 weeks ago" '+%b %_d')
+awk -v start="$start_date" -v end="$today" '
+{
+  date = $1" "$2
+  if (date >= start && <+ end)
+  print
+}' "$log_file" | grep "Failed password"
