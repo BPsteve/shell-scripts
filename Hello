@@ -1,0 +1,3 @@
+#!/bin/bash
+# This is a comment in my first ever script
+echo “Hello Shell!”
