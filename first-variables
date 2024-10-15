@@ -1,0 +1,5 @@
+#!/bin/bash
+# A script to experiment with variables
+name=Guy
+department=Fun
+echo "The new employee is $name and his/her department is $department"
